@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Network | Přihlášení</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+  <main class="auth-shell">
+    <section class="auth-card">
+      <div class="brand-block">
+        <h1>Social Network</h1>
+        <p>Přihlas se nebo si vytvoř účet.</p>
+      </div>
+
+      <div class="auth-grid">
+        <section>
+          <h2>Přihlášení</h2>
+          <form id="loginForm" class="stack-form">
+            <input id="username" placeholder="Uživatelské jméno" required>
+            <input id="password" type="password" placeholder="Heslo" required>
+            <button type="submit">Přihlásit se</button>
+          </form>
+        </section>
+
+        <section>
+          <h2>Registrace</h2>
+          <form id="registerForm" class="stack-form">
+            <input id="r_first" placeholder="Jméno" required>
+            <input id="r_last" placeholder="Příjmení" required>
+            <input id="r_age" type="number" min="13" placeholder="Věk" required>
+            <input id="r_gender" placeholder="Pohlaví" required>
+            <input id="r_user" placeholder="Uživatelské jméno" required>
+            <input id="r_pass" type="password" placeholder="Heslo" required>
+            <button type="submit">Registrovat</button>
+          </form>
+        </section>
+      </div>
+
+      <p id="message" class="message"></p>
+    </section>
+  </main>
+
+  <script src="shared.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>

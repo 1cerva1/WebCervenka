@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Network | Feed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="feed.html">Social Network</a>
+      <nav class="main-nav">
+        <a class="active" href="feed.html">Feed</a>
+        <a href="users.html">Uživatelé</a>
+      </nav>
+      <button class="ghost-button" id="logoutBtn" type="button">Odhlásit se</button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="composer card">
+      <div class="section-head">
+        <h1>Nový příspěvek</h1>
+      </div>
+      <form id="postForm" class="stack-form">
+        <input id="title" placeholder="Nadpis" maxlength="255" required>
+        <textarea id="content" placeholder="Co máš na srdci?" rows="4" required></textarea>
+        <input id="image" placeholder="URL obrázku (volitelné)">
+        <div class="actions-row">
+          <button type="submit">Přidat příspěvek</button>
+          <span id="postMessage" class="message inline"></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="feed-layout">
+      <div id="posts" class="posts-list"></div>
+    </section>
+  </main>
+
+  <script src="shared.js"></script>
+  <script src="posts.js"></script>
+</body>
+</html>
